@@ -1,0 +1,134 @@
+:root {
+  --grey-color: #718390;
+  --white: #ffffff;
+  --lite-white: #f6f6f6;
+  --dark-blue: #344d5f;
+  --lite-blue: #cde0ef;
+  --lite-grey: #fafafa;
+  --shadow-color: #00000033;
+  --bg-grey-color: #dcd9d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.page-heading {
+  padding: 2rem;
+  font-weight: bold;
+  color: var(--grey-color);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Left navigation  */
+
+.left-nav {
+  color: var(--grey-color);
+  z-index: 1;
+  background-color: var(--lite-white);
+  box-shadow: 5px 0px 18px 0px var(--shadow-color);
+  -webkit-box-shadow: 5px 0px 18px 0px var(--shadow-color);
+  -moz-box-shadow: 5px 0px 18px 0px var(--shadow-color);
+  height: 100vh;
+}
+
+a.nav-item {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.8rem 0.5rem;
+  border-left: 2px solid var(--lite-white);
+  text-decoration: none;
+  color: var(--grey-color);
+  text-align: center;
+  font-weight: bold;
+  gap: 8px;
+}
+
+a.nav-item:hover {
+  color: var(--dark-blue);
+  background-color: var(--lite-white);
+}
+
+a.nav-item.active {
+  background-color: var(--lite-blue);
+  color: var(--dark-blue);
+  border-left: 2px solid var(--dark-blue);
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+/* Main or Root Div */
+
+.main {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+}
+
+/* page content  */
+
+.content {
+  background-color: var(--bg-grey-color);
+  display: grid;
+  grid-template-rows: 120px 1fr;
+}
+
+.header {
+  background-color: var(--white);
+}
+
+.back {
+  font-size: 25px;
+}
+
+/* Main content  */
+
+/* search input styling */
+.search-input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--lite-grey);
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid var(--lite-white);
+}
+
+.search-input:focus {
+  outline: none;
+  border: 2px solid var(--grey-color);
+}
+input::placeholder {
+  color: #2d2d2d;
+  font-weight: bold;
+}
+
+.upload-image {
+  height: 200px;
+  width: 200px;
+  background-color: var(--lite-grey);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-form-cont {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
